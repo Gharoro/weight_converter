@@ -57,7 +57,7 @@ numberInput.addEventListener('input', getFacts);
 //Using Fetch API
 function getFacts() {
     let number = numberInput.value;
-    fetch(`http://numbersapi.com/${number}/math`)
+    fetch(`https://numbersapi.com/${number}/math`)
         .then(response => response.text())
         .then(data => {
             if (number != '') {
